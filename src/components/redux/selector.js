@@ -2,10 +2,7 @@ import { createSelector } from "reselect";
 export const todoListSelector = (state) => state.todoList;
 export const filterSearchSelector = (state) => state.filters.search;
 export const filterStatusSelector = (state) => state.filters.status;
-export const filterPrioritiesSelector = (state) => {
-  console.log(state.filters.priorities);
-  return state.filters.priorities;
-};
+export const filterPrioritiesSelector = (state) => state.filters.priorities;
 
 export const todoRemaining = createSelector(
   todoListSelector,
